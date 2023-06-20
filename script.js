@@ -23,6 +23,6 @@ function draw() {
     const dataURL = canvas.toDataURL();
     const anchor = document.createElement('a');
     anchor.href = dataURL;
-    anchor.download = "mrsc.jpg";
+    anchor.download = "mrsc.png";
     anchor.click();
   }
