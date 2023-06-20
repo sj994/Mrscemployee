@@ -5,7 +5,7 @@ function draw() {
     const ctx = canvas.getContext('2d');
     let img = new Image();
     img.addEventListener("load", ()=>{
-      ctx.drawImage(img,70,70,700,500);
+      ctx.drawImage(img,70,70,550,600);
     });
     img.src = "https://i.ibb.co/mN7xnT1/images.jpg";
     img.setAttribute('crossorigin', 'anonymous'); // works for me
