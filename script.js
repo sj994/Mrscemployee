@@ -1,5 +1,4 @@
 
-
 function draw() {
   const canvas = document.getElementById('canvas');
   var userinput="اسم المستخدم";
@@ -9,15 +8,20 @@ function draw() {
    // Draw the image at the center of the canvas
    ctx.drawImage(img,0, 0, 550, 600);
   });
-  img.src = "https://i.ibb.co/mN7xnT1/images.jpg";
+  img.src = "https://i.ibb.co/dmnCxfj/image.jpg";
   img.setAttribute('crossorigin', 'anonymous'); // works for me
   img.style.objectFit = "cover";
 }
 function username(){
+
   const userName = document.getElementById('username').value;
   const ctx = canvas.getContext('2d');
-  ctx.font = '30px Cairo';
-  ctx.fillText(userName, 250, 500);
+  
+  ctx.fillStyle = '#ffffff';
+  ctx.direction = 'rtl';
+  ctx.font = "30px Cairo";
+  ctx.textAlign = 'center';
+  ctx.fillText(userName, canvas.width / 2, 280);
   // document.getElementById().innerText=name.value;
 }
 function downloadImage() {
